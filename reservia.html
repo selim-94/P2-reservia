@@ -2,7 +2,9 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="test.css" />
+    <link rel="stylesheet" media="screen and (min-width: 769px) and (max-width: 1100px)" href="tab.css" />
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="tel.css" />
     <script
       src="https://kit.fontawesome.com/92262beaab.js"
       crossorigin="anonymous"
@@ -18,12 +20,10 @@
       <div id="menu">
         <nav>
           <!--menu de navigation-->
-          <ul>
-            <li><a href="#hebergements">Hébergements</a></li>
-            <li><a href="#activites">Activités</a></li>
-            <li><a href="#"><span>S'inscrire</span></a></li>
-          </ul>
-        </nav>
+            <a class="lien_heb" href="#hebergements">Hébergements</a>
+            <a class="lien_act" href="#activites">Activités</a>
+            <span>S'inscrire</span>
+          </nav>
       </div>
     </header>
     <section id="section1">
@@ -39,6 +39,7 @@
         </form>
       </div>
      <div id="bouton"> <input type="submit" value="Rechercher" class="bouton" /></div>
+     <button id="loupe" type="submit" class="fas fa-search"></button>
     </div>
        <div id="filtres">
       <p><strong>Filtres</strong></p>
@@ -96,12 +97,14 @@
             />
             <figcaption class="leg_heb"><!--légende figure-->
               <strong>Auberge de la Cannebière</strong> <br />Nuit à partir de
-              <strong>25€</strong> <br />
+              <strong>25€</strong>
+              <div id="note_can">
               <i class="fas fa-star blue"></i><!--icone etoile bleue-->
               <i class="fas fa-star blue"></i>
               <i class="fas fa-star blue"></i>
               <i class="fas fa-star blue"></i>
               <i class="fas fa-star grey"></i><!--icone etoile grise-->
+            </div>
             </figcaption>
           </figure>
         </a>
@@ -114,12 +117,14 @@
             <figcaption class="leg_heb"><!--légende figure-->
               <strong>Hôtel du port </strong><br />Nuit à partir de 52<strong
                 >€</strong
-              ><br />
+              >
+              <div id="note_port">
               <i class="fas fa-star blue"></i><!--icone etoile bleue-->
               <i class="fas fa-star blue"></i>
               <i class="fas fa-star blue"></i>
               <i class="fas fa-star blue"></i>
               <i class="fas fa-star blue"></i>
+            </div>
             </figcaption>
           </figure>
         </a>
@@ -131,12 +136,14 @@
             />
             <figcaption class="leg_heb"><!--légende figure-->
               <strong>Hôtel Les mouettes </strong><br />Nuit à partir de
-              76<strong>€</strong><br />
+              76<strong>€</strong>
+              <div id="note_mouettes">
               <i class="fas fa-star blue"></i><!--icone etoile bleue-->
               <i class="fas fa-star blue"></i>
               <i class="fas fa-star blue"></i>
               <i class="fas fa-star blue"></i>
               <i class="fas fa-star grey"></i><!--icone etoile grise-->
+            </div>
             </figcaption>
           </figure>
         </a>
@@ -149,12 +156,14 @@
             <figcaption class="leg_heb"><!--légende figure-->
               <strong>Hôtel de la mer </strong><br />Nuit à partir de 46<strong
                 >€</strong
-              ><br />
+              >
+              <div id="note_mer">
               <i class="fas fa-star blue"></i><!--icone etoile bleue-->
               <i class="fas fa-star blue"></i>
               <i class="fas fa-star blue"></i>
               <i class="fas fa-star grey"></i><!--icone etoile grise-->
               <i class="fas fa-star grey"></i>
+            </div>
             </figcaption>
           </figure>
         </a>
@@ -166,12 +175,14 @@
             />
             <figcaption class="leg_heb"><!--légende figure-->
               <strong>Auberge Le Panier </strong><br />Nuit à partir de
-              <strong>23€</strong><br />
+              <strong>23€</strong>
+              <div id="note_panier">
               <i class="fas fa-star blue"></i><!--icone etoile bleue-->
               <i class="fas fa-star blue"></i>
               <i class="fas fa-star blue"></i>
               <i class="fas fa-star blue"></i>
               <i class="fas fa-star grey"></i><!--icone etoile grise-->
+            </div>
             </figcaption>
           </figure>
         </a>
@@ -184,12 +195,14 @@
             <figcaption class="leg_heb"><!--légende figure-->
               <strong>Hôtel chez Amina </strong><br />Nuit à partir de 96<strong
                 >€</strong
-              ><br />
+              >
+              <div id="note_amina">
               <i class="fas fa-star blue"></i><!--icone etoile bleue-->
               <i class="fas fa-star blue"></i>
               <i class="fas fa-star blue"></i>
               <i class="fas fa-star blue"></i>
               <i class="fas fa-star blue"></i>
+            </div>
             </figcaption>
           </figure>
         </a>
@@ -210,12 +223,14 @@
             />
             <figcaption class="leg_pop"><!--légende figure-->
               <strong>Hôtel Le soleil du matin </strong><br />Nuit à partir de
-              128<strong>€</strong><br /><br /><br />
+              128<strong>€</strong>
+              <div id="note_soleil">
               <i class="fas fa-star blue"></i><!--icone etoile bleue-->
               <i class="fas fa-star blue"></i>
               <i class="fas fa-star blue"></i>
               <i class="fas fa-star blue"></i>
               <i class="fas fa-star blue"></i>
+            </div>
             </figcaption>
           </figure>
         </a>
@@ -227,12 +242,14 @@
             />
             <figcaption class="leg_pop"><!--légende figure-->
               <strong>Au cœur de l'eau Chambre d'hôtes </strong><br />Nuit à
-              partir de 71<strong>€</strong><br /><br />
+              partir de 71<strong>€</strong>
+              <div id="note_coeur">
               <i class="fas fa-star blue"></i><!--icone etoile bleue-->
               <i class="fas fa-star blue"></i>
               <i class="fas fa-star blue"></i>
               <i class="fas fa-star blue"></i>
               <i class="fas fa-star grey"></i><!--icone etoile grise-->
+            </div>
             </figcaption>
           </figure>
         </a>
@@ -244,12 +261,14 @@
             />
             <figcaption class="leg_pop"><!--légende figure-->
               <strong>Hôtel Tout bleu et tout Blanc </strong><br />Nuit à partir de
-              68<strong>€</strong><br /><br /><br/>
+              68<strong>€</strong>
+              <div id="note_bleu">
               <i class="fas fa-star blue"></i><!--icone etoile bleue-->
               <i class="fas fa-star blue"></i>
               <i class="fas fa-star blue"></i>
               <i class="fas fa-star blue"></i>
               <i class="fas fa-star grey"></i><!--icone etoile grise-->
+            </div>
             </figcaption>
           </figure>
         </a>

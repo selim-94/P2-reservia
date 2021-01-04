@@ -1,8 +1,8 @@
 body {
   font-family: "raleway", serif;
   margin: 0%;
+  width: 100%;
 }
-
 /* header */
 
 header {
@@ -10,9 +10,11 @@ header {
   justify-content: space-between;
   margin-left: 2%;
   margin-right: 2%;  
+  padding-top: 25px;
 }
+
 /*liste lien menu nav*/
-ul {
+nav {
   list-style-type: none;
   display: flex;
   justify-self: flex-end;
@@ -23,20 +25,23 @@ ul {
   color: black;
   padding-left: 20px;
   padding-right: 20px;
-}
-
-#menu li{
   padding-top: 20px;
-  padding-left: 50px;
 }
 
-li span{
+#menu nav{
+  padding-top: 4%;
+ 
+}
+
+nav span{
     color: #0065fc;
     font-weight: bold;
     text-decoration: none;
+    padding-top: 20px;
+    padding-left: 20px;
 }
 /*liens nav au survol souris*/
-#menu li :hover {
+#menu a:hover {
   border-top: 2px solid #0065fc;
   color: #0065fc;
   padding-top: 20px;
@@ -61,7 +66,6 @@ li span{
   font-size: 0.9em;
 }
 
-
 /*bloc recherche*/
 #recherche {
   display: flex;
@@ -77,6 +81,9 @@ form {
   border: 0px;
   border-radius: 0px 10px 10px 0px;
   width: 110px;
+}
+#loupe{
+  display: none;
 }
 /*icone geolocalisation*/
 .fa-map-marker-alt {
@@ -109,6 +116,14 @@ input {
   display: flex;
   align-items: center;
 }
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-self: flex-end;
+}
+.info{
+  display: flex;
+}
 /*txt filtres*/
 #filtres span {
   font-weight: bolder;
@@ -116,12 +131,8 @@ input {
   margin-right: 20px;
   color: black;
 }
-
 /*bloc filtres*/
-#filtre_eco,
-#filtre_fam,
-#filtre_rom,
-#filtre_ani {
+#filtre_eco, #filtre_fam, #filtre_rom, #filtre_ani {
   display: flex;
   align-items: center;
 }
@@ -177,10 +188,7 @@ input {
   color: #0065fc;
 }
 /*icones filtres*/
-.fa-money-bill-wave,
-.fa-child,
-.fa-heart,
-.fa-dog {
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
   color: #0065fc;
   vertical-align: sub;
   padding-top: 12px;
@@ -197,9 +205,7 @@ input {
   margin-right: 5px;
 }
 /*cercles background familial romantique et animaux*/
-.cercle_fam,
-.cercle_rom,
-.cercle_ani {
+.cercle_fam, .cercle_rom, .cercle_ani {
   width: 40px;
   height: 40px;
   border-radius: 40px;
@@ -247,7 +253,6 @@ input {
   margin-left: 40px;
   margin-right: 170px;
 }
-
 /*bloc hebergements*/
 #hebergements {
   background-color: #f2f2f2;
@@ -256,16 +261,13 @@ input {
   margin-right: 20px;
 }
 #hebergements h2{
-  font-size: 1.2em;
-  margin-left: 45px;
+  margin-left: 6%;
 }
 #hebergements p{
-  margin-left: 45px;
+  margin-left: 6%;
 }
-
 /*liens hebergements et populaires*/
-#hebergements a,
-#populaires a {
+#hebergements a, #populaires a {
   text-decoration: none;
 }
 /*legendes hebergements*/
@@ -301,46 +303,41 @@ aside {
   flex-wrap: wrap;
 }
 /*images hebergements*/
-#cannebière img,
-#hotel_port img,
-#mouettes img,
-#mer img,
-#panier img,
-#amina img {
+#cannebière img, #hotel_port img, #mouettes img, #mer img, #panier img, #amina img {
   width: 230px;
   height: 100px;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
 /*bordures images hebergements*/
-#cannebière,
-#hotel_port,
-#mouettes,
-#mer,
-#panier,
-#amina {
+#cannebière, #hotel_port, #mouettes, #mer, #panier, #amina {
   border: 5px white solid;
   background-color: white;
   border-radius: 20px;
 }
 /*images populaire*/
-#matin img,
-#coeur img,
-#bleu img {
+#matin img, #coeur img, #bleu img {
   width: 100px;
   height: 115px;
   border-radius: 20px 0px 0px 20px;
   object-fit: cover;
 }
 /*bordures images populaires*/
-#matin,
-#coeur,
-#bleu {
+#matin, #coeur, #bleu {
   display: flex;
   align-items: flex-start;
   border: 3px white solid;
   background-color: white;
   border-radius: 20px;
+}
+#note_soleil{
+  padding-top: 26%;
+}
+#note_coeur{
+  padding-top: 11%;
+}
+#note_bleu{
+  padding-top: 20%;
 }
 /*section 3*/
 #section3{
@@ -365,8 +362,7 @@ aside {
   text-decoration: none;
 }
 /*images port et parc*/
-#port img,
-#parc img {
+#port img, #parc img {
   width: 290px;
   height: 360px;
   object-fit: cover;
@@ -412,12 +408,7 @@ aside {
   margin-left: 0%;
 }
 /*legendes figures activités*/
-#port figcaption,
-#pomegues figcaption,
-#iles figcaption,
-#parc figcaption,
-#garde figcaption,
-#longchamp figcaption {
+#port figcaption, #pomegues figcaption, #iles figcaption, #parc figcaption, #garde figcaption, #longchamp figcaption {
   height: 50px;
 }
 /*image pomegues*/
@@ -435,16 +426,14 @@ aside {
   border-radius: 20px 20px 0px 0px;
 }
 /*images garde longchamp*/
-#garde img,
-#longchamp img {
+#garde img, #longchamp img {
   width: 290px;
   height: 120px;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
 /*positions figures fort_iles et garde_longchamp*/
-.fort_iles,
-.garde_longchamp {
+.fort_iles, .garde_longchamp {
   display: grid;
   align-content: space-between;
 }
@@ -453,16 +442,14 @@ aside {
 footer {
   display: flex;
   background-color: #f2f2f2;
+  justify-content: space-around;
 }
-/*position bloc a propos*/
 #a_propos{
-    margin-left: 45px;
+  margin-left: 60px;
 }
-/*position bloc hebergement footer*/
 #nos_hebergements {
-  margin-left: 280px;
+margin-left: 60px;
 }
-/*position bloc assistance footer*/
 #assistance {
-  margin-left: 300px;
+margin-left: 60px;
 }
