@@ -154,6 +154,10 @@ header{
          background: none;
          width: 100%;
        }
+  /*organisation figures hebergements*/     
+       .figs{
+         flex-direction: column;
+       }
   /*titres hebergements*/     
      #hebergements h2{
        font-weight: bold;
@@ -164,7 +168,7 @@ header{
   /*paragraphe hebergements*/   
      #hebergements p{
        margin-left: 45px;
-       font-weight: bolder;
+       font-weight: bold;
        font-size: 1.3em;
      }
    /*legende hebergements*/

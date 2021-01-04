@@ -77,7 +77,7 @@ header{
     }
 /*organisation activités*/
   #port, #parc, #pomegues, #iles,  #garde, #longchamp{
-    width: fit-content;
+    width:min-content
   } 
 /*footer*/
   footer{
