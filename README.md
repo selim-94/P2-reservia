@@ -23,3 +23,5 @@ Tout en respectant les contraintes techniques suivantes :
 - Le code devra utiliser les balises sémantiques et ne doit contenir aucune erreur ni alerte au validateur W3C HTML et CSS.
 - Le site devra être compatible avec les dernières versions de Chrome et Firefox.
 - Versionner le code avec Git. Ensuite il faut déployer la page sur GitHub Pages ou GitLab Pages.
+
+![alt text](https://github.com/selim-94/P2-reservia/blob/master/maquettes/Desktop%20-%201.png)
