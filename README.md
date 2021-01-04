@@ -29,3 +29,8 @@ Le resultat final doit être le suivant :
 version P.C
 
 ![alt text](https://github.com/selim-94/P2-reservia/blob/master/maquettes/Desktop%20-%201.png)
+
+
+version téléphone :
+
+![alt text](https://github.com/selim-94/P2-reservia/blob/master/maquettes/iPhone%208%20-%201.png)
